@@ -9,7 +9,7 @@ import {
 import MainLayout from "./layouts/MainLayout";
 
 // pages
-import { Home, About, Login } from "./pages";
+import { Home, About, Login, SingleProduct } from "./pages";
 
 // redux
 import { useDispatch, useSelector } from "react-redux";
@@ -40,6 +40,10 @@ function App() {
         {
           path: "/about",
           element: <About />,
+        },
+        {
+          path: "/singleProduct/:id",
+          element: <SingleProduct />,
         },
       ],
     },
